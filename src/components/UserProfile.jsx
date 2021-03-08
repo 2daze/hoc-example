@@ -17,7 +17,7 @@ class UserProfile extends React.Component {
 
   renderPostList() {
     return this.state.posts.map(post => (
-        <div className="post">
+        <div className="post" key={post.id}>
           <h1>{post.title}</h1>
           <p>{post.body}</p>
         </div>
